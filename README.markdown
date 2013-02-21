@@ -15,16 +15,16 @@ You can see a live demo at [Wordpress on Heroku](http://wordpress-on-heroku.hero
 
 ## Getting started in 60 seconds
 
-Fork and rename the [Wordpress project template](http://github.com/mchung/wordpress-on-heroku).
+Fork and rename this [Wordpress project template](http://github.com/mchung/wordpress-on-heroku). i.e. Rename it to something like photosofcats.com
 
 Let's clone the repository for a new blog, 99catfacts.com
 ```bash
-$ git clone git://github.com/your_name/wordpress-on-heroku.git 99catfacts.com
+$ git clone git://github.com/username/photosofcats.com.git photosofcats
 ```
 
 Create Wordpress on Heroku.
 ```bash
-$ cd 99catfacts.com
+$ cd photosofcats
 $ heroku create -s cedar
 $ heroku config:add BUILDPACK_URL=https://github.com/mchung/heroku-buildpack-wordpress.git
 ```

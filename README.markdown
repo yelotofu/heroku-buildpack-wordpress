@@ -4,10 +4,10 @@
 
 It uses this [Wordpress](http://github.com/mchung/wordpress-on-heroku) project template to bootstrap a highly tuned Wordpress site built on the following stack:
 
-* `nginx-1.3.11` - Nginx for serving web content.  Built specifically for Heroku.  [See compile options](https://github.com/mchung/heroku-buildpack-wordpress/blob/master/support/package_nginx).
-* `php-5.4.11` - PHP-FPM for process management and APC for caching opcodes.  [See compile options](https://github.com/mchung/heroku-buildpack-wordpress/blob/master/support/package_php).
+* `nginx-1.3.11` - Nginx for serving web content.  Built specifically for Heroku.  [See compile options](https://github.com/yelotofu/heroku-buildpack-wordpress/blob/master/support/package_nginx).
+* `php-5.4.11` - PHP-FPM for process management and APC for caching opcodes.  [See compile options](https://github.com/yelotofu/heroku-buildpack-wordpress/blob/master/support/package_php).
 * `wordpress-3.5.1` - Downloaded directly [from wordpress.org](http://wordpress.org/download/release-archive/).
-* `MySQL` - ClearDB for the MySQL backend.
+* `Amazon RDS` - Amazon RDS for the MySQL backend.
 * `Sendgrid` - Sendgrid for the email backend.
 * `MemCachier` - MemCachier for the memcached backend.
 
@@ -15,7 +15,7 @@ You can see a live demo at [Wordpress on Heroku](http://wordpress-on-heroku.hero
 
 ## Getting started in 60 seconds
 
-Fork and rename this [Wordpress project template](http://github.com/mchung/wordpress-on-heroku). i.e. Rename it to something like photosofcats.com
+Fork and rename this [Wordpress project template](http://github.com/yelotofu/wordpress-on-heroku). i.e. Rename it to something like photosofcats.com
 
 Let's clone the repository for a new blog, 99catfacts.com
 ```bash

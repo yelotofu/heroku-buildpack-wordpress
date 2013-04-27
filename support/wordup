@@ -19,13 +19,13 @@ case "$1" in
       instance_name=$2
 
       echo "-----> Installing Wordpress on Heroku"
-      git clone git://github.com/mchung/wordpress-on-heroku.git $instance_name | indent
+      git clone git://github.com/yelotofu/wordpress-on-heroku.git $instance_name | indent
       cd $instance_name
 
       echo "-----> Acquiring Heroku dynos"
       heroku create \
          --stack cedar \
-         --buildpack https://github.com/mchung/heroku-buildpack-wordpress.git $instance_name | indent
+         --buildpack https://github.com/yelotofu/heroku-buildpack-wordpress.git $instance_name | indent
 
       echo "-----> Create custom production branch"
       git co -b production
